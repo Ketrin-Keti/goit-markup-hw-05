@@ -732,28 +732,25 @@ p {
   transform: translate(-50%, -50%);
   padding: 72px 24px 24px 24px;
   background-color: #fcfcfc;
-  overflow: hidden;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  justify-content: center;
-  align-items: center;
+  border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-model {
   position: absolute;
   top: 24px;
   right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
   background-color: #e7e9fc;
-  width: 24px;
-  height: 24px;
-  z-index: 100;
-  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -763,7 +760,6 @@ p {
   border: none;
 }
 .model-social-icon {
-  fill: var(--color-osnow);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-model:hover .model-social-icon,
@@ -786,12 +782,12 @@ p {
 }
 
 .name {
-  display: block;
-  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--label-color);
+  display: block;
+  margin-bottom: 4px;
 }
 .input-name {
   position: relative;
@@ -925,11 +921,10 @@ p {
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-/* justify-content: center;
+  justify-content: center;
   align-items: center;
   padding: 16px 32px;
-} */
+}
 
 .send-link:hover {
   background-color: #404bbf;
