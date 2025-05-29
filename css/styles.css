@@ -756,8 +756,8 @@ p {
 .model-social-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.model-social-icon:hover,
-.model-social-icon:focus {
+.button-model:hover .model-social-icon,
+.button-model:focus .model-social-icon {
   fill: #ffffff;
 }
 
@@ -835,6 +835,7 @@ p {
 .textarea-form:focus {
   border-color: #4d5ae5;
 }
+
 .checkbox {
   margin-top: 16px;
   margin-bottom: 24px;
@@ -866,20 +867,26 @@ p {
 }
 .checkbox-social-icon-ok {
   display: none;
-  fill: #2e2f42;
+  fill: var(--svg-color);
   transition: opacity 250ms;
 }
 .input-checkbox:checked + .checkbox-label .link {
-  background-color: #4d5ae5;
-  border: none;
-  fill: #ffffff;
-}
-.input-checkbox:checked + .link {
   background-color: var(--checkcolor);
   border: none;
   fill: var(--svg-color);
 }
-
+.checkbox-label:focus .link {
+  background-color: var(--checkcolor);
+  border: none;
+}
+.checkbox-label:focus .checkbox-social-icon-ok,
+.input-checkbox:checked + .checkbox-label .checkbox-social-icon-ok {
+  display: block;
+}
+.checkbox-label:focus .checkbox-social-icon,
+.input-checkbox:checked + .checkbox-label .checkbox-social-icon {
+  display: none;
+}
 .checkbox-politic {
   color: var(--accent-color);
   text-decoration: underline;
