@@ -654,8 +654,7 @@ p {
 .foototer-social-link:focus {
   background-color: #31d0aa;
 }
-.footer-button {
-}
+
 .footer-button-text {
   margin-bottom: 16px;
   font-weight: 500;
@@ -668,8 +667,7 @@ p {
   display: flex;
   gap: 24px;
 }
-.label-footer {
-}
+
 .input-email {
   width: 264px;
   height: 40px;
@@ -840,8 +838,7 @@ p {
   margin-top: 16px;
   margin-bottom: 24px;
 }
-.input-checkbox {
-}
+
 .checkbox-label {
   margin-bottom: 24px;
   display: flex;
@@ -928,11 +925,3 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* .input-checkbox:checked + .checkbox-label .link .checkbox-social-icon {
-  opacity: 0;
-  fill: #ffffff;
-}
-
-.input-checkbox:checked + .label .checkbox-social-icon {
-  display: none;
-} */
