@@ -533,7 +533,7 @@ p {
   justify-content: center;
 }
 
-.portfolio-thumb:hover .portfolio-text {
+.our-portfolio-item:hover .portfolio-text {
   transform: translateY(0%);
 }
 
@@ -681,6 +681,7 @@ p {
   padding-left: 16px;
   border-radius: 4px;
   color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .placeholder {
   color: #ffffff;
@@ -755,7 +756,8 @@ p {
 .model-social-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.model-social-icon:hover {
+.model-social-icon:hover,
+.model-social-icon:focus {
   fill: #ffffff;
 }
 
