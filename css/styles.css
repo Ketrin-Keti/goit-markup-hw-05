@@ -767,7 +767,7 @@ p {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  cursor: var(--color-osnow);
+  color: var(--color-osnow);
   margin-bottom: 16px;
 }
 
@@ -881,7 +881,6 @@ p {
 }
 
 .checkbox-politic {
-  margin-left: ;
   color: var(--accent-color);
   text-decoration: underline;
 }
