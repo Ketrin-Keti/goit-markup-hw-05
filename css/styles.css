@@ -875,32 +875,28 @@ p {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-social-icon-ok {
-  display: none;
-  fill: var(--svg-color);
-  transition: opacity 250ms;
-}
 .input-checkbox:checked + .checkbox-label .link {
   background-color: var(--checkcolor);
   border: none;
   fill: var(--svg-color);
 }
-.checkbox-label:focus .link {
+/* .checkbox-label:focus .link {
   background-color: var(--checkcolor);
   border: none;
-}
-.checkbox-label:focus .checkbox-social-icon-ok,
+} */
+/* .checkbox-label:focus .checkbox-social-icon-ok,
 .input-checkbox:checked + .checkbox-label .checkbox-social-icon-ok {
   display: block;
-}
-.checkbox-label:focus .checkbox-social-icon,
+} */
+/* .checkbox-label:focus .checkbox-social-icon,
 .input-checkbox:checked + .checkbox-label .checkbox-social-icon {
   display: none;
-}
+} */
+
 .checkbox-politic {
   color: var(--accent-color);
   text-decoration: underline;
@@ -945,10 +941,4 @@ p {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-.form-name-actyv {
-  color: #404bbf;
-}
-.form-name-actyv::after {
-  border-color: #4d5ae5;
 }
