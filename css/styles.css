@@ -853,8 +853,7 @@ p {
   color: var(--label-color);
 }
 .link {
-  display: flex;
-  flex-direction: initial;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
