@@ -859,9 +859,9 @@ p {
 }
 .checkbox {
   margin-top: 16px;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px;
   display: flex;
-  gap: 12px;
+  gap: 12px; */
 }
 
 .checkbox-label {
@@ -885,10 +885,8 @@ p {
   align-items: center;
   justify-content: center;
   fill: transparent;
-}
-/*
   margin-right: 8px;
- */
+}
 
 .input-checkbox:checked + .checkbox-label .link {
   background-color: var(--checkcolor);
