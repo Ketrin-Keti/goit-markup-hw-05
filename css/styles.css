@@ -817,6 +817,9 @@ p {
 .input-name-list:focus + .name-social-icon {
   fill: #4d5ae5;
 }
+.input-name:focus-within .name-social-icon {
+  fill: #4d5ae5;
+}
 .form-texteria {
   margin-bottom: 16px;
 }
