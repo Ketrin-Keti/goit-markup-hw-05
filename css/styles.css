@@ -916,6 +916,7 @@ p {
   align-items: center;
   padding: 16px 32px;
 }
+
 .send-link:hover {
   background-color: #404bbf;
 }
