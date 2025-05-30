@@ -865,10 +865,7 @@ p {
   color: var(--color-osnow);
 }
 .checkbox {
-  margin-top: 16px;
-  /* margin-bottom: 24px;
-  display: flex;
-  gap: 12px; */
+  margin-top: 24px;
 }
 
 .checkbox-label {
