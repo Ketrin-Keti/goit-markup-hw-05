@@ -707,13 +707,13 @@ p {
 }
 
 .model {
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   height: 100%;
-  z-index: 999;
   background-color: rgba(46, 47, 66, 0.4);
+  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -730,19 +730,20 @@ p {
 
 .model-window {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  width: 408px;
-  min-height: 584px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 72px 24px 24px 24px;
+  width: 408px;
+  min-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 72px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
 }
 .button-model {
   position: absolute;
@@ -806,12 +807,12 @@ p {
   border-radius: 4px;
   background-color: transparent;
   padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #2e2f42;
-  outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-name-list:focus {
@@ -823,16 +824,16 @@ p {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  fill: #2e2f42;
-  pointer-events: none;
+  /* fill: #2e2f42;
+  pointer-events: none; */
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-name-list:focus + .name-social-icon {
   fill: #4d5ae5;
 }
-.input-name:focus-within .name-social-icon {
+/* .input-name:focus-within .name-social-icon {
   fill: #4d5ae5;
-}
+} */
 .form-texteria {
   margin-bottom: 16px;
 }
@@ -865,13 +866,13 @@ p {
   color: var(--color-osnow);
 }
 .checkbox {
-  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .checkbox-label {
   margin-bottom: 24px;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -889,7 +890,7 @@ p {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 
 .input-checkbox:checked + .checkbox-label .link {
@@ -917,7 +918,6 @@ p {
 .send-link {
   display: block;
   min-width: 169px;
-  margin: 0 auto;
   height: 56px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -928,11 +928,12 @@ p {
   cursor: pointer;
   background-color: #4d5ae5;
   border: none;
-  border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  justify-content: center;
-  align-items: center;
-  padding: 16px 32px;
+  /* justify-content: center;
+  align-items: center; */
+  /* padding: 16px 32px;  */
+  border-radius: 4px;
+  margin: 0 auto;
 }
 
 .send-link:hover {
